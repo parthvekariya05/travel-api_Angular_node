@@ -1,0 +1,32 @@
+<div class="container mt-3 border border-3 border-primary rounded">
+    <div class="row ">
+      <div class="col">
+        <table class="table">
+          <tr>
+            <td>
+              <h1 class="text-primary ">ID :- {{data.id}}</h1>
+              <h5 class="text-danger ">
+                Name  :- {{data.TravellerName}}
+              </h5>
+              <h5 class="text-danger">
+                Destination :- {{data.Destination}}
+              </h5>
+              <h5 class=" text-danger ">
+                Amount is :- {{data.ExpenseAmount}}
+              </h5>
+              <h5 class="text-danger">Date :- {{data.ExpenseDate}}</h5>
+              <button routerLink="" class="btn btn-warning m-3  border border-2 border-warning">
+                Back
+              </button>
+              <button routerLink="/travel/edit/{{data.id}}" class="btn btn-primary border border-2 border-primary m-3">
+                Edit
+              </button>
+              <button (click)="delete()" class="btn btn-danger m-3  border border-2 border-danger">
+                Delete
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>

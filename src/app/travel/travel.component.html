@@ -1,0 +1,16 @@
+<div class="container">
+  <button routerLink="/travel/add" class="btn btn-primary">Add</button>
+  <div class="row mx-5">
+  <div class="card container col-6 text-bg-secondary border-dark my-1" *ngFor="let t of data ">
+    <div class="card-body">
+      <h5 class="card-title">ID : {{t.id}}</h5>
+      <p class="card-text">TravellerName : {{t.TravellerName}}</p>
+      <p class="card-text">Destination : {{t.Destination}}</p>
+      <p className="card-text">Amount : {{t.ExpenseAmount}}</p>
+      <p className="card-text">Date: {{t.ExpenseDate}}</p>
+      <button routerLink="/travel/{{t.id}}" class="btn btn-primary">View Detail</button>
+      <button (click)="delete(t.id)" class="btn btn-danger">Delete</button>
+    </div>  
+  </div>
+</div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container m-3">
+    <form [formGroup]="myForm" (ngSubmit)="insert()"> 
+        <table>
+            <tr>
+                <td>Enter ID</td>
+                <td>:</td>
+                <td><input type="text" placeholder="enter id" formControlName="id"></td>
+            </tr>
+            <tr>
+                <td>Enter TravellerName</td>
+                <td>:</td>
+                <td><input type="text" placeholder="enter travellerName" formControlName="TravellerName"></td>
+            </tr>
+            <tr>
+                <td>Enter Destination</td>
+                <td>:</td>
+                <td><input type="text" placeholder="enter destination" formControlName="Destination"></td>
+            </tr>
+            <tr>
+                <td>Enter ExpenseAmount</td>
+                <td>:</td>
+                <td><input type="text" placeholder="enter ExpenseAmount" formControlName="ExpenseAmount"></td>
+            </tr>
+            <tr>
+                <td>Enter ExpenseDate</td>
+                <td>:</td>
+                <td><input type="text" placeholder="enter ExpenseDate" formControlName="ExpenseDate"></td>
+            </tr>
+            <input type="submit" class="btn btn-primary mt-3 " [value]="btname">
+        </table>
+    </form>
+</div>
